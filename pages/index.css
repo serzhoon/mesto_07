@@ -1,0 +1,124 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts.css');
+@import url('../blocks/page/page.css');
+@import url('../blocks/header/header.css');
+@import url('../blocks/content/content.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/profile/profile.css');
+@import url('../blocks/places/places.css');
+@import url('../blocks/card/card.css');
+@import url('../blocks/popup/popup.css');
+@import url('../blocks/popup/_is-animated/popup_is-animated.css');
+@import url('../blocks/popup/_is-opened/popup_is-opened.css');
+
+/* Стили для ошибок валидации */
+
+.popup__error {
+    color: #FF0000;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+    min-height: 30px;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.popup__error_visible {
+    opacity: 1;
+}
+
+.popup__input_type_error {
+    border-bottom-color: #FF0000;
+}
+
+.popup__button_disabled {
+    background-color: #E5E5E5;
+    color: #000000;
+    opacity: 0.2;
+    cursor: default;
+}
+
+.popup__button_disabled:hover {
+    opacity: 0.2;
+}
+
+
+/* Стили для контейнера аватара */
+
+.profile__image-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+/* Кнопка редактирования аватара */
+
+.profile__avatar-edit-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8) url('../images/edit-avatar.svg') center no-repeat;
+    background-size: 26px 26px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.profile__avatar-edit-button:hover {
+    opacity: 1;
+}
+
+
+/* Контейнер лайков */
+
+.card__like-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+}
+
+.card__like-count {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000;
+    margin-top: 3px;
+}
+
+
+/* Стиль для активного лайка */
+
+.card__like-button_is-active {
+    background-image: url('../images/like-active.svg');
+}
+
+
+/* Стили для имитации работы приложения */
+
+.card__like-button_is-active {
+    background-image: url('../images/like-active.svg');
+    opacity: 1;
+}
+
+
+/* Индикатор загрузки */
+
+.loading-indicator {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
+}
