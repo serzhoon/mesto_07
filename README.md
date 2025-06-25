@@ -2,4 +2,4 @@
 ## Выполнил студент группы ПИН-Б-З-22-1
 ### Гадиян Сергей Гариевич
 #### Ссылка на сайт 
-#### https://serzhoon.github.io/Mesto_js/
+#### https://serzhoon.github.io/mesto_07/
